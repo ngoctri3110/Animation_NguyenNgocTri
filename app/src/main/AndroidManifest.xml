@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Animation_NguyenNgocTri">
         <activity
+            android:name=".Ex4"
+            android:exported="true" />
+        <activity
             android:name=".Ex3"
             android:exported="true" />
         <activity

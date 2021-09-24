@@ -21,13 +21,11 @@ public class Ex2 extends AppCompatActivity {
         View decor = getWindow().getDecorView();
 
         getWindow().setEnterTransition(fade);
-        // we are also setting fade
-        // animation for exit transition.
         getWindow().setExitTransition(fade);
 
-        final ImageView imageView = findViewById(R.id.imgTree4);
+        final ImageView img4 = findViewById(R.id.imgTree4);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        img4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Ex2.this,
@@ -35,11 +33,29 @@ public class Ex2 extends AppCompatActivity {
 
                 ActivityOptionsCompat options =
                         ActivityOptionsCompat.makeSceneTransitionAnimation(
-                                Ex2.this, imageView,
-                                ViewCompat.getTransitionName(imageView));
+                                Ex2.this, img4,
+                                ViewCompat.getTransitionName(img4));
                 // starting our activity with below method.
                 startActivity(intent, options.toBundle());
             }
         });
+
+        final ImageView img1 = findViewById(R.id.imgTree1);
+
+        img1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Ex2.this,
+                        Ex4.class);
+
+                ActivityOptionsCompat options =
+                        ActivityOptionsCompat.makeSceneTransitionAnimation(
+                                Ex2.this, img1,
+                                ViewCompat.getTransitionName(img1));
+                // starting our activity with below method.
+                startActivity(intent, options.toBundle());
+            }
+        });
+
     }
 }
