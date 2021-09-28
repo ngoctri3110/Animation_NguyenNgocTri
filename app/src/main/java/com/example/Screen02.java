@@ -1,5 +1,6 @@
 package com.example;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,13 @@ public class Screen02 extends Fragment {
         View view = inflater.inflate(R.layout.activity_screen02, container, false);
         img_taylor = view.findViewById(R.id.img_taylor);
         img_music = view.findViewById(R.id.img_music2);
+
+        Intent intent = getActivity().getIntent();
+        Bundle bundle = intent.getBundleExtra("DATA");
+        Singer singer = (Singer) bundle.getSerializable("SINGER");
+        img_taylor.setImageResource(singer.getImg());
+
+
         Animation animation =
                 AnimationUtils.loadAnimation(view.getContext(),
                         R.anim.anirotate);

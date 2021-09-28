@@ -23,10 +23,10 @@ public class Screen1 extends AppCompatActivity {
         rv_Baihat = findViewById(R.id.rvBaiHat);
 
         singers.add(new Singer("Taylor Swift", "Love Story", R.drawable.eclipse));
-        singers.add(new Singer("Taylor Swift", "Love Story", R.drawable.eclipse));
-        singers.add(new Singer("Taylor Swift", "Love Story", R.drawable.eclipse));
-        singers.add(new Singer("Taylor Swift", "Love Story", R.drawable.eclipse));
-        singers.add(new Singer("Taylor Swift", "Love Story", R.drawable.eclipse));
+        singers.add(new Singer("The Kid LAROI, Justin Bieber", "STAY", R.drawable.stay));
+        singers.add(new Singer("Sơn Tùng M-TP", "Hãy trao cho anh", R.drawable.mtp));
+        singers.add(new Singer("ROSÉ", "On The Ground", R.drawable.roses));
+        singers.add(new Singer("Post Malone", "Congratulations", R.drawable.post));
 
         adapter = new listBaiHatAdapter(singers, this, this);
         rv_Baihat.setAdapter(adapter);

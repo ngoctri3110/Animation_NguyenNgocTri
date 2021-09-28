@@ -8,7 +8,7 @@
     app:layoutDescription="@xml/activity_screen01_scene"
     tools:context="com.example.Screen01">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_taylor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
         app:srcCompat="@drawable/vedau" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvBaiHat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
